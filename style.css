@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  color: #1c1c1c;
+  background: #ffffff;
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Playfair Display', serif;
+}
+
+.hero-about {
+  position: relative;
+  height: 100vh;
+  background: url("images/doutor.png") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  padding: 0 10%;
+  color: #ffffff;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+}
+
+.hero-content {
+  position: relative;
+  max-width: 650px;
+  z-index: 2;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.hero-content h2 {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 1.2rem;
+  margin-bottom: 25px;
+  color: #e0e0e0;
+}
+
+.hero-content p {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+}
+
+.inline-specialties {
+  font-size: 0.95rem;
+  color: #d0d0d0;
+  margin-bottom: 35px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 14px 34px;
+  background: #0d2c54;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: 500;
+}
+
+.authority {
+  background: #f4f6f9;
+  padding: 25px;
+  text-align: center;
+  font-weight: 500;
+}
+
+.about {
+  display: flex;
+  gap: 60px;
+  padding: 80px 10%;
+  align-items: center;
+}
+
+.about-image img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.specialties {
+  padding: 80px 10%;
+  text-align: center;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.card {
+  padding: 30px;
+  border: 1px solid #e6e6e6;
+  border-radius: 6px;
+}
+
+.cta-final {
+  padding: 80px 10%;
+  text-align: center;
+}
+
+.btn.dark {
+  background: #1c1c1c;
+}
+
+footer {
+  background: #0d2c54;
+  color: #ffffff;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 900px) {
+  .hero-about {
+    padding: 0 20px;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .about {
+    flex-direction: column;
+  }
+
+  .hero-content h1 {
+    font-size: 2.2rem;
+  }
+}
